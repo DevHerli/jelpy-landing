@@ -15,7 +15,7 @@ const components = [
   declarations: [...components],
   exports: [...components],
   imports: [
-    CommonModule
+    CommonModule,
 
   ]
 })
