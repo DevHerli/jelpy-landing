@@ -8,7 +8,7 @@ const components = [
 ];
 
 @NgModule({
-  declarations: [...components ],
+  declarations: [...components],
   exports: [...components],
   imports: [
     CommonModule,
