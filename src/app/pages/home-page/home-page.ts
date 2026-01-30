@@ -10,7 +10,6 @@ import { AppIconfontGrid } from '../../components/app-iconfont-grid/app-iconfont
 })
 export class HomePage {
   readonly dialog = inject(MatDialog);
-
   /**
    * Opens Icons Dialog
    *
