@@ -1,62 +1,6 @@
 <div class="iconGrid">
-  <div class="iconContainer">
-    <span class="flaticon-calendar"></span>
-    <p>flaticon-calendar</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-clock"></span>
-    <p>flaticon-clock</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-success"></span>
-    <p>flaticon-success</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-internet"></span>
-    <p>flaticon-internet</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-error"></span>
-    <p>flaticon-error</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-photo-camera"></span>
-    <p>flaticon-photo-camera</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-plus"></span>
-    <p>flaticon-plus</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-like"></span>
-    <p>flaticon-like</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-music-player"></span>
-    <p>flaticon-music-player</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-user"></span>
-    <p>flaticon-user</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-file-1"></span>
-    <p>flaticon-file-1</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-share"></span>
-    <p>flaticon-share</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-home"></span>
-    <p>flaticon-home</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-settings"></span>
-    <p>flaticon-settings</p>
-  </div>
-  <div class="iconContainer">
-    <span class="flaticon-users"></span>
-    <p>flaticon-users</p>
+  <div class="iconContainer" *ngFor="let icon of icons" (click)="copyToClipboard(icon.value)">
+    <span [class]="icon.value"></span>
+    <p>{{ icon.value }}</p>
   </div>
 </div>
