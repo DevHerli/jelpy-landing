@@ -1,6 +1,6 @@
 <div class="iconGrid">
-  <div *ngFor="let data of icons" class="iconContainer" (click)="copyToClipboard(data.icon)">
-    <span [class]="data.icon"></span>
-    <p>{{ data.icon }}</p>
+  <div class="iconContainer" *ngFor="let icon of icons" (click)="copyToClipboard(icon.value)">
+    <span [class]="icon.value"></span>
+    <p>{{ icon.value }}</p>
   </div>
 </div>
