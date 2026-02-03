@@ -134,8 +134,10 @@
 
           <!-- Header Button -->
           <span class="navbar-text">
-            <a href="#content-10" class="btn btn-tra-white yellow-hover">Start Free Trial</a>
-            <a class="btn btn-tra-white yellow-hover" (click)="openDialog()">Icons</a>
+            <select class="btn btn-tra-white lang-select" (change)="switchLang($event)">
+              <option value="es" [selected]="currentLang === 'es'">🇲🇽 ES</option>
+              <option value="en" [selected]="currentLang === 'en'">🇺🇸 EN</option>
+            </select>
           </span>
         </div>
         <!-- End Navigation Menu -->
@@ -178,7 +180,7 @@
 
               <!-- Title -->
               <h4 class="h4-lg" style="color: black">
-                Tu asistente virtual para encontrar negocios locales.
+                {{ 'HOME.HERO_SUBTITLE' | translate }}
               </h4>
 
               <!-- STORE BADGES -->

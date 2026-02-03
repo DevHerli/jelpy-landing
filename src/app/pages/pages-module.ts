@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePage } from './home-page/home-page';
 import { ComponentsModule } from '../components/components-module';
+import { TranslateModule } from '@ngx-translate/core';
 
 const components = [
   HomePage
@@ -9,10 +10,11 @@ const components = [
 
 @NgModule({
   declarations: [...components],
-  exports: [...components],
+  exports: [...components, TranslateModule],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    TranslateModule
   ]
 })
 export class PagesModule { }
