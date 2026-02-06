@@ -1,15 +1,17 @@
 import { Component, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { TranslateService } from '@ngx-translate/core';
-import { AppIconfontGrid } from '../../shared/components/app-iconfont-grid/app-iconfont-grid';
+import { AppIconfontGrid } from '../../../../shared/components/app-iconfont-grid/app-iconfont-grid';
+import { AppHeaderContainer } from "../../../../core/components/app-header-container/app-header-container";
+import { AppFooterContainer } from "../../../../core/components/app-footer-container/app-footer-container";
 
 @Component({
-  selector: 'app-home-page',
-  templateUrl: './home-page.html',
-  styleUrl: './home-page.scss',
+  selector: 'app-home-container',
+  templateUrl: './app-home-container.html',
+  styleUrl: './app-home-container.scss',
   standalone: false
 })
-export class HomePage {
+export class AppHomeContainer {
   // Inyectamos los servicios necesarios
   private readonly dialog = inject(MatDialog);
   private readonly translate = inject(TranslateService);
