@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
   declarations: [AppHomeContainer],
   imports: [
     CommonModule, AppFooterContainer, AppHeaderContainer, TranslateModule
-  ]
+  ],
+  exports: [AppHomeContainer]
 })
 export class HomeModule { }

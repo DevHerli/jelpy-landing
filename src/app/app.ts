@@ -1,7 +1,7 @@
 import { Component, signal, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { PagesModule } from './pages/pages-module';
+import { HomeModule } from './features/home/home-module';
 
 // Declaramos PAQUETES para que no marque error de TypeScript al usar los scripts del index.html
 declare var PAQUETES: any;
@@ -10,8 +10,7 @@ declare var PAQUETES: any;
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, // Lo incluimos para que la navegación funcione
-    PagesModule
+    RouterOutlet, HomeModule
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
@@ -22,7 +21,7 @@ export class App implements AfterViewInit {
   constructor(private readonly translate: TranslateService) {
     // Definimos los idiomas disponibles para Jelpy
     this.translate.addLangs(['es', 'en']);
-    
+
     // Establecemos el idioma por defecto
     this.translate.setDefaultLang('es');
 
