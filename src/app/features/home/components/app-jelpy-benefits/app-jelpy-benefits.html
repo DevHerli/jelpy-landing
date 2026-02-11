@@ -1,4 +1,4 @@
-<section id="features-7" class="bg-lightgrey wide-60 features-section division">
+<section id="jelpy-benefits" class="bg-lightgrey wide-60 features-section division">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
@@ -16,7 +16,7 @@
         <div *ngFor="let data of benefits" class="col-sm-6 col-lg-3">
           <div class="fbox-7 pc-25 mb-40 wow fadeInUp" [attr.data-wow-delay]="data.delay">
             <div class="fbox-7-ico grey-color ico-75"><span [class]="data.icon"></span></div>
-            <h5 class="h5-md deepblue-color">{{ data.title }}</h5>
+            <h5 class="h5-md deepblue-color">{{ data.title | translate }}</h5>
             <p class="grey-color">{{ data.info }}</p>
           </div>
         </div>

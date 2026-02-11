@@ -1,5 +1,8 @@
 {
-    "HOME": {
-      "HERO_SUBTITLE": "Your virtual assistant for finding local businesses."
-    }
+  "HOME": {
+    "HERO_SUBTITLE": "Your virtual assistant for finding local businesses."
+  },
+  "NAVBAR": {
+    "BUTTON_ABOUT": "About Us"
+  }
 }

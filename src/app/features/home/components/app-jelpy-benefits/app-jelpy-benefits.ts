@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-jelpy-benefits',
@@ -7,7 +8,13 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class AppJelpyBenefits {
+  private readonly translate = inject(TranslateService);
+  public currentLang: string;
 
+  constructor() {
+    // Inicializamos el idioma actual basado en lo que el servicio tenga activo
+    this.currentLang = this.translate.currentLang || 'es';
+  }
   public benefits = [{
     icon: "flaticon-man",
     title: "Crea tu perfil en segundos",
@@ -25,11 +32,16 @@ export class AppJelpyBenefits {
     title: "Revisa y compara",
     info: "Jelpy te ayuda a comparar precios de productos y servicios de manera sencilla",
     delay: "0.8s"
-  }, {
-    //TODO (Carlos Salas): Rellenar la seccion 4 con info real de Jelpy
-    icon: "flaticon-credit-card",
-    title: "Make Transaction",
-    info: "Feugiat primis ligula risus neque auctor egestas",
+  },
+  {
+    icon: "flaticon-success",
+    title: "Información clara y actualizada",
+    info: "Siempre encontrarás las información mas actual de tus negocios favoritos",
     delay: "1s"
+  }, {
+    icon: "flaticon-success",
+    title: "HOME.HERO_SUBTITLE",
+    info: "Siempre encontrarás las información mas actual de tus negocios favoritos",
+    delay: "1.2s"
   }]
 }
