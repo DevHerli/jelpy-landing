@@ -21,7 +21,7 @@ import { AppContactUs } from "./components/app-contact-us/app-contact-us";
 
 
 @NgModule({
-  declarations: [AppHomeContainer, AppJelpyBenefits], //DEclaraciones son los componentes propios del modulo, 
+  declarations: [AppHomeContainer, AppJelpyBenefits, AppBrands, AppContactUs, AppContent1, AppContent2, AppContent3, AppFaq, AppFeatures, AppHowDoesItWork, AppIntroVideo, AppJelpyBenefits2, AppReviews, AppSection1], //DEclaraciones son los componentes propios del modulo, 
   imports: [
     //Modulos
     CommonModule,
@@ -29,18 +29,6 @@ import { AppContactUs } from "./components/app-contact-us/app-contact-us";
     //Standalone
     AppFooterContainer,
     AppHeaderContainer,
-    AppSection1,
-    AppContent1,
-    AppFeatures,
-    AppHowDoesItWork,
-    AppIntroVideo,
-    AppJelpyBenefits2,
-    AppContent2,
-    AppBrands,
-    AppFaq,
-    AppContent3,
-    AppReviews,
-    AppContactUs
   ],
   exports: [AppHomeContainer] // Son los compopnentes que otros modulos pueden hacer uso al importar
 })

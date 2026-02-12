@@ -1,6 +1,9 @@
 {
   "HOME": {
-    "HERO_SUBTITLE": "Tu asistente virtual para encontrar negocios locales."
+    "HERO_SUBTITLE": "Tu asistente virtual para encontrar negocios locales.",
+    "CONTENT_1_TITLE": "Encuentra negocios locales, cerca de ti.",
+    "CONTENT_1_TEXT_1": "Jelpy es una plataforma que te ayuda a descubrir negocios y servicios locales de forma rápida, clara y cercana.",
+    "CONTENT_1_TEXT_2": "No es un directorio más: es una IA local que aprende de la comunidad para ofrecerte mejores opciones cerca de ti."
   },
   "NAVBAR": {
     "BUTTON_ABOUT": "Nosotros"
